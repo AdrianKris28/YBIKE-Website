@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBIKE</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/signin.css">
+</head>
+<body>
+    
+    <main>
+        <form action="index.html" method="GET" name="Form" onsubmit="return dataValidation()">
+            <a href="index.html" id="containerLogo"><img src="../Assets/logo_ybike_2.png"  id="logo" alt=""></a>
+            
+            <input type="text" placeholder="Input username" id="usernameBox">
+            <input type="email" placeholder="Input your email account" id="emailBox">
+            <input type="password" placeholder="Password" id="passwordBox">
+            <input type="password" name="" placeholder="Verify Password" id="verifyBox">
+            <p><input type="radio" name="gender" id="maleBox">Male</p>
+            <p><input type="radio" name="gender" id="femaleBox">Female</p>
+            <!-- <a href="../Html/index.html" class="SignInBox"><input type="button" value="Sign In" id="submitBox"></a> -->
+           
+            <button type="submit" id="signInButton">Sign In</button>
+            
+            <a href="https://accounts.google.com/ServiceLogin" class="signinWithGoogle">
+                <img src="../Assets/1200px-Google_22G22_Logo.png" id="googleIMG" alt="">
+                <input type="button" value="Sign In With Google" id="signInGoogle"></a>
+
+ 
+        </form>
+
+    </main>
+
+<script src="../Js/validasiSignIn.js"></script>
+</body>
+</html>

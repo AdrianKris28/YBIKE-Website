@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YBIKE</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/formreserve.css">
+</head>
+<body>
+<header>
+    <section>
+        <div class="left-header">
+            <div class="logo">
+                <a href="./index.html"><img src="../Assets/logo_ybike_2.png" alt="Logo"></a>
+            </div>
+
+            <div class="navbar">
+                <a href="./reserve.html" id="productBox" class="Menu">Reserve</a>
+                <a href="#Sale" id="saleBox" class="Menu">Sale</a>
+
+                <div class="search-container">
+                    <form action="">
+                        <label for="searchbar"></label>
+                        <input type="text" name="searchbar" id="searchBox" placeholder="Search here">
+                        <button type="submit"><img src="../Assets/MicrosoftTeams-image.png" alt=""></button>
+                    </form>
+                </div>
+
+                <a href="#ShoppingCart" alt="" id="shoppingcart" class="Menu">
+                    <img src="../Assets/outline_shopping_cart_white_24dp.png" id="ShoppingCart">
+                </a>
+
+                <a href="./signin.html" id="signinBox" class="Menu">Sign in</a>
+
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+
+    <section class="formreserve">
+        <h1>Reserve Form</h1>
+        <form class="reserveForm" action="index.html" method="GET" name="form" onsubmit="return validated()">
+            <div class="name">Name</div>
+            <input type="text" name="name" id="nameBox" autocomplete="off" placeholder="Input your name">
+            <div id="errorname">Please fill up your Name</div>
+    
+            <div class="phone">Phone</div>
+            <input type="text" name="phone" id="phoneBox"  autocomplete="off"placeholder="Input your phone number">
+            <div id="errorphone">Please fill up your Phone Number</div>
+            
+            <div class="address">Address</div>
+            <input type="text" name="address" id="addressBox" autocomplete="off" placeholder="Input your address">
+            <div id="erroraddress">Please fill up your Address</div>
+            
+            <div class="color">Color</div>
+            <select name="color" id="color">
+                <option value="Red">Red</option>
+                <option value="Red">Blue</option>
+                <option value="Red">Black</option>
+                <option value="Red">Green</option>
+            </select>
+            <div id="errorcolor">Select a color</div>
+            <div class="quantity">Quantity</div>
+            <input type="number" name="quantity" id="quantityBox"> <br>
+            <div id="quantityerror">Please fill up at least 1</div>
+          
+            <button type="submit" name="reserveBtn" id="reservebtn">Reserve</button>
+
+        </form>
+    </section>
+
+
+</main>
+
+<footer>
+    <div class="luarfooter">
+        <p>&copy;2021 YBIKE</p>
+        <div class="sosmed">
+            <a href="https://instagram.com"><img src="../Assets/instagram.png" alt="Ig" id="instagram"></a>
+            <a href="https://twitter.com"> <img src="../Assets/twitter.png" alt="Twitter"></a>
+            <a href="https://facebook.com"> <img src="../Assets/facebook.png" alt="Facebook" id="facebooklogo"></a>
+        </div>
+
+    </div>
+</footer>
+
+    <script src="../Js/validasiReserve.js"></script>
+</body>
+</html>

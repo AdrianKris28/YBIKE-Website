@@ -1,0 +1,52 @@
+.motor a {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.motor a h3 {
+  color: black;
+}
+
+.motor a .hargamotor {
+  color: #7b8077;
+  font-weight: lighter;
+}
+
+.quotes {
+  text-align: center;
+  font-size: 5rem;
+}
+
+.description {
+  width: 30ch;
+  color: white;
+  position: absolute;
+  background-color: #1b1b1b;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.motor:hover{
+    cursor: pointer;
+}
+
+.motor:hover div{
+    visibility: visible;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 500px) {
+  .quotes {
+    font-size: 2.3rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+}

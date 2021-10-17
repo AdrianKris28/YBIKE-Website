@@ -1,0 +1,84 @@
+
+main{
+    background-image: url(../Assets/wallpaper\ motor\ keren.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    
+}
+
+.formreserve h1{
+    text-align: center;
+}
+
+.formreserve{
+    background-color: rgba(0, 0, 0, 0.687);
+    max-width: 40rem;
+    margin: auto;
+    font-size: 2rem;
+    padding: 1em 2em;
+    border-radius: 2em;
+    color: white;
+}
+
+.formreserve input, .formreserve select, .formreserve button{
+    font-size: 2rem;
+}
+
+.reserveForm{
+    margin-top: 1em;
+}
+
+.reserveForm button{
+    border-radius: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    margin-top: 1.4rem;
+    transition: 0.5s;
+}
+
+.reserveForm button:hover{
+    background-color: rgb(138, 138, 138);
+    color: white;
+    transition: 0.5s;
+}
+
+footer{
+    margin: 0;
+}
+
+.reserveForm .name,
+.reserveForm .phone,
+.reserveForm .address,
+.reserveForm .color,
+.reserveForm .quantity{
+    margin-top: 1rem;
+}
+
+.reserveForm #errorname,
+.reserveForm #errorphone,
+.reserveForm #erroraddress,
+.reserveForm #errorcolor,
+.reserveForm #quantityerror{
+    color: #C62828;
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+.formreserve{
+    font-size: 1.3rem;
+    border-radius: 2em;
+    color: white;
+}
+
+.formreserve input, .formreserve select, .formreserve button{
+    font-size: 1.3rem;
+}
+
+}
